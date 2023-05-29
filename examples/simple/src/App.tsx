@@ -1,4 +1,5 @@
 import React from 'react';
+import { Terminal } from './Terminal';
 import './App.css';
 
 function App() {
@@ -12,11 +13,7 @@ function App() {
         </div>
         admin@ubuntu: /dev/tty*
       </div>
-      <div className="content">
-        <div className="prompt">
-          /dev/ttyUSB0$
-        </div>
-      </div>
+      <Terminal />
     </div>
   );
 }
