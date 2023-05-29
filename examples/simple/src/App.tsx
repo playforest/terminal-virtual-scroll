@@ -1,4 +1,5 @@
 import React from 'react';
+import './App.css';
 
 function App() {
   return (
@@ -9,7 +10,7 @@ function App() {
           <div className="button min"></div>
           <div className="button max"></div>
         </div>
-        Terminal - /dev/ttyUSB0
+        admin@ubuntu: /dev/tty*
       </div>
       <div className="content">
         <div className="prompt">
@@ -17,9 +18,6 @@ function App() {
         </div>
       </div>
     </div>
-
-
-
   );
 }
 
