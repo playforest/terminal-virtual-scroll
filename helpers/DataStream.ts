@@ -20,7 +20,8 @@ export class DataStream {
     }
 
     private generateData() {
-        `X:-132.90 Y:-70.70 Z:-100.40 qw:0.78 qx:0.07 qy:-0.42 qz:-0.37`
+        // this method returns dummy accelerometer data:
+        // `X:-132.90 Y:-70.70 Z:-100.40 qw:0.78 qx:0.07 qy:-0.42 qz:-0.37`
 
         setInterval(() => {
             let x: number = this.getRandomBetween(-180, 180);
