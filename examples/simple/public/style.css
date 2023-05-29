@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
+
+body {
+    background-color: rgb(59, 59, 59);
+}
+
+.mac-window {
+    width: 80vw;
+    height: 300px;
+    background-color: #181818;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    font-family: Consolas, "Courier New", monospace;
+}
+
+.mac-window .title-bar {
+    height: 30px;
+    background-color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px;
+    color: #fff;
+    font-size: 11px;
+    font-family: 'Ubuntu Mono', monospace;
+    ;
+}
+
+.mac-window .title-bar .buttons {
+    position: absolute;
+    left: 10px;
+    /* top: 50%; */
+    /* transform: translateY(-50%); */
+    display: flex;
+}
+
+.mac-window .title-bar .button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.mac-window .title-bar .button.close {
+    background-color: #ff5f57;
+}
+
+.mac-window .title-bar .button.min {
+    background-color: #ffbd2e;
+}
+
+.mac-window .title-bar .button.max {
+    background-color: #27c93f;
+}
+
+.mac-window .content {
+    padding: 10px;
+    color: #fff;
+    height: calc(100% - 30px);
+    overflow: auto;
+    font-size: 11px;
+    font-family: 'Ubuntu Mono', monospace;
+    ;
+}
+
+.mac-window .content .prompt {
+    color: #27c93f;
+}
