@@ -11,8 +11,15 @@ export const Terminal = () => {
     useEffect(() => {
         console.log('Creating new instance of DataStream and connecting');
 
-        const stream = new DataStream('/dev/ttyUSB0', 100, true, 40, (data) => {
-            dispatch(pushData(data))
+        const stream = new DataStream({
+            name: '/dev/ttyUSB0',
+            updateFrequency: 100,
+            isActive: true,
+            immediate: true,
+            dataLength: 40,
+            onDataReceived: (data) => {
+                dispatch(pushData(data))
+            }
         })
         stream.connect();
     }, [])
