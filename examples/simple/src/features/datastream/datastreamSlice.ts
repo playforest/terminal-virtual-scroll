@@ -1,6 +1,6 @@
 import { createSlice } from '@reduxjs/toolkit'
 
-type State = {
+export type State = {
     name: string | null;
     data: string[];
     terminalRefreshRate: number;
@@ -23,7 +23,6 @@ const datastreamSlice = createSlice({
             state.terminalRefreshRate = payload;
         },
         pushData: (state, { payload }: { payload: string }) => {
-            console.log(`writing data: ${payload}`);
             state.data.push(payload);
         }
     }
