@@ -1,8 +1,17 @@
 # TODO
 
+- [*] VirtualConsole class
+    - [*] properties and constructor
+    - [*] methods for calculating math
+
+- [ ] Init VirtualConsole in Terminal component
+
+
 ## Helpers / Utils
 - [*] basic terminal UI componenet
 - [*] port class for streaming dummy testing data 
+
+
 
 
 # NOTES
@@ -29,5 +38,6 @@ We nest the visible lines rendered (+ buffer) with empty leading and trailing pl
 (Total array length - index of first visible element - buffer) * line height
 - Trailing placeholder height:
 (Total array length - index of last visible element + buffer) * line height
-- Index of first visilble element:
+- Index of first visilble element: Math.floor(scrollTop / line height)
 - Index of last visible element:
+Index of first visible element + (viewable height / line height)
